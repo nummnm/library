@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <button id="newBookBtn">New Book</button>
+
+  <dialog id="bookDialog">
+    <form id="bookForm">
+      <input id="title" type="text" placeholder="Title" required>
+      <input id="author" type="text" placeholder="Author" required>
+      <input id="pages" type="number" placeholder="Pages" required>
+
+      <label>
+        <input id="read" type="checkbox">
+        I've read this book
+      </label>
+
+      <button type="submit">Add Book</button>
+      <button type="button" id="cancelBtn">Cancel</button>
+    </form>
+  </dialog>
+
+  <div id="library"></div>
+
+  <script src="js.js"></script>
+</body>
+</html>
